@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+		<title>Exercício 01</title>
+</head>
+<body>
+
+	<!-- Exercício JS - A vidente:
+				Implemente esse exercício utilizando um botão na sua página e chamando uma função
+				declarada como "aVidente"
+				Guarde seu nome numa variável
+				Guarde o número de filhos que você quer ter em outra variável
+				Guarde a cidade em que você gostaria de morar em outra variável
+				Guarde a sua profissão desejada em outra variável
+				Escreva na página (HTML) a seguinte frase: "A vidente prevê: {seu nome} terá {quantidade de
+				filhos} e viverá em {cidade} trabalhando como {profissão}" 
+	-->
+
+		<button onclick="aVidente()">Clique aqui para saber seu futuro!</button>
+
+    <script>
+        function aVidente() {
+            var nome = "Victoria";
+            var numeroFilhos = 2;
+            var cidade = "Canadá";
+            var profissao = "Desenvolvedora FullStack";
+
+						document.write("A vidente prevê que a " + nome + " terá " + numeroFilhos + " filhos e viverá no " + cidade + " trabalhando como " + profissao + ".")
+        }
+    </script>
+</body>
+</html>
