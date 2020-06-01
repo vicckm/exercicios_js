@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!--
+    Exibindo o menu e pegando a resposta do usuário: faça uma função que exibe o menu de
+    bebidas de um restaurante (utilizando document.write), com um item em cada linha: 1-
+    Refrigerante, 2-Suco, 3-Água. Após isso, receba a escolha do cliente (utilizando prompt) e
+    retorne o valor/item escolhido pelo cliente. Utilize document.write para escrever na tela o
+    resultado desta função com os parâmetros a sua escolha. Teste todas as saídas possíveis.
+-->
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostraMensagem(mensagem) {
+        document.write(mensagem);
+    }
+
+    function escolhaBebidas() {
+        var item = prompt("Qual bebida você quer? Digite o número correspondente:");
+        if(item == "1") {
+            return mostraMensagem("Você escolheu o refrigerante.");
+        } else if(item == "2") {
+            return mostraMensagem("Você escolheu suco.");
+        } else if(item == "3") {
+            return mostraMensagem("Você escolheu água.");
+        } else {
+            return mostraMensagem("Digite um número válido.");
+        }
+    }
+
+    function menuBebidas() {
+        document.write("1 - Refrigerante");
+        pulaLinha();
+        document.write("2 - Suco");
+        pulaLinha();
+        document.write("3 - Água");
+        pulaLinha();
+  
+    }
+
+    menuBebidas();
+    setTimeout(escolhaBebidas, 3000);
+
+    
+</script>

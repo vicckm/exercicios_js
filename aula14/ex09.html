@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!--
+    Exibindo o menu e pegando a resposta do usuário: faça uma função que exibe o menu de
+    bebidas de um restaurante (utilizando document.write), com um item em cada linha: 1-
+    Refrigerante, 2-Suco, 3-Água. Após isso, receba a escolha do cliente como um número
+    (utilizando prompt) e exiba na tela o tipo da bebida escolhida pelo cliente.
+-->
+<script>
+function escolher(){
+    document.write("<br>1-Refrigerante<br> 2-Suco<br> 3-Água");
+
+    setTimeout(perguntar, 1000);
+}
+function perguntar(){
+    var escolha = prompt("Qual o número do item que você deseja?");
+    
+    if (escolha == 1){
+        document.write("<br> Você escolheu Refrigerante");
+    } else if (escolha == 2){
+        document.write("<br> Você escolheu Suco");
+    } else if (escolha == 3){
+        document.write("<br> Você escolheu Água");
+    } else{
+        document.write("<br> Este item não está no Menu");
+    }
+}
+
+</script>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+<!--
+    Resto 9: Crie uma função que recebe como parâmetro um número. Essa função deve retornar o
+    texto "O resto de {numero} divididos por 9 é: {resto da divisão}". Utilize document.write para
+    escrever na tela o resultado desta função com os parâmetros a sua escolha.
+-->
+<script>
+
+    numero = prompt("Digite um número")
+
+    function restoDaDivisao(numero) {
+        var resto = numero % 9;
+        return document.write("O resto de " + numero + " divididos por 9 é: " + resto);
+    }
+   
+    restoDaDivisao(numero);
+</script>

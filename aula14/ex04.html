@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+<!--
+    O motorista: Crie uma função que recebe 2 parâmetros: a idade do usuário e a idade em que é
+    permitido dirigir em algum país. Essa função deve retornar o texto "você pode dirigir" caso a
+    idade do usuário seja maior ou igual a estabelecida para direção no país e "você não pode
+    dirigir" caso contrário. Utilize document.write para escrever na tela o resultado desta função com
+    os parâmetros a sua escolha. Teste todas as saídas possíveis.
+-->
+<script>
+
+    var idadeUsuario = prompt("Digite sua idade:");
+    var idadePermitida = prompt("Com quantos anos um brasileiro pode dirigir?");
+
+    function mostraMensagem(mensagem) {
+        document.write(mensagem);
+    }
+
+    function permissaoParaDirigir(idadeUsuario, idadePermitida) {
+        if (idadeUsuario >= idadePermitida) {
+            mostraMensagem("Você pode dirigir!");
+        } else {
+            mostraMensagem("Você não pode dirigir!");
+        }
+    } 
+
+    permissaoParaDirigir(idadeUsuario, idadePermitida);
+</script>

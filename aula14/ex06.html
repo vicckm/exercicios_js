@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!--
+    Semáforo: faça uma função que recebe como parâmetro as strings "verde", "amarelo" ou
+    "vermelho". Caso o parâmetro passado seja "verde", a função deve retornar "pode passar!", caso
+    seja "amarelo", retorna "melhor freiar", caso seja "vermelhor", "pare já!". Utilize document.write
+    para escrever na tela o resultado desta função com os parâmetros a sua escolha. Teste todas as
+    saídas possíveis.
+--> 
+<script>
+
+    function mostraMensagem(mensagem) {
+        document.write(mensagem);
+    }
+    
+    function situacaoSemaforo(estadoSemaforo) {
+        if(estadoSemaforo == "verde") {
+            mostraMensagem("Pode passar!");
+        } else if(estadoSemaforo == "amarelo") {
+            mostraMensagem("Melhor freiar");
+        } else if(estadoSemaforo == "vermelho") {
+            mostraMensagem("Pare já!")
+        } else {
+            mostraMensagem("Digite um estado válido.")
+        }
+    }
+
+    situacaoSemaforo("azul");
+
+</script>
